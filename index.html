@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="form-section mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col col-8 mx-auto">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Add new task</h5>
+                            <form name="addTask">
+                                <input type="text" name="title" id="title" class="form-control"
+                                    placeholder="Task title" />
+                                <input type="text" name="body" id="body" class="form-control mt-3"
+                                    placeholder="Task body" />
+                                <input type="date" class="timedate" id="start" name="trip-start" value="2020-05-10"
+                                    min="2020-01-01" max="2030-12-31">
+                                <button type="submit" class="btn btn-primary mt-4">
+                                    Add task
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabs-section">
+        <div class="container">
+            <div class="tab">
+                <!-- <button class="tablinks" onclick="openCity(event, 'London')">Все задачи</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Текущие</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Завершенные</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Архив</button> -->
+                <button class="tablinks">Все задачи</button>
+                <button class="tablinks">Текущие</button>
+                <button class="tablinks">Завершенные</button>
+                <button class="tablinks">Архив</button>
+            </div>
+
+            <!-- <div id=" London" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div> -->
+        </div>
+    </div>
+    <div class="tasks-list-section mt-5">
+        <div class="container">
+            <ul class="list-group">
+
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
